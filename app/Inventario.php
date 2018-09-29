@@ -14,4 +14,9 @@ class Inventario extends Model
         'fecha',
         'cupos'
     ];
+
+    public function servicios()
+    {
+        return $this->hasMany(Servicio::class, 'id');
+    }
 }

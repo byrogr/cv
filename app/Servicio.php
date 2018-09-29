@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Servicio extends Model
 {
     protected $table = "se_servicio";
+
+    public function inventario()
+    {
+        return $this->belongsTo(Inventario::class);
+    }
 }
