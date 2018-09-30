@@ -26,7 +26,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'Namora',
-            'slug' => 'EL DELEITE DE LOS DIOSES',
+            'slug' => str_slug('EL DELEITE DE LOS DIOSES'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -42,7 +42,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'Namora',
-            'slug' => 'SURFING EN CABALLITO DE TOTORA (TUP)',
+            'slug' => str_slug('SURFING EN CABALLITO DE TOTORA (TUP)'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -58,7 +58,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'Namora',
-            'slug' => 'EL ATARDECER CON DECIMAS Y AL SON DEL CAJON',
+            'slug' => str_slug('EL ATARDECER CON DECIMAS Y AL SON DEL CAJON'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -74,7 +74,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'La Encañada',
-            'slug' => 'TALLER DE MARINERA NORTEÑA',
+            'slug' => str_slug('TALLER DE MARINERA NORTEÑA'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -90,7 +90,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'La Encañada',
-            'slug' => 'PARTICIPACION EN LA COMPARSA DE LOS DIABLICOS DE TUCUME',
+            'slug' => str_slug('PARTICIPACION EN LA COMPARSA DE LOS DIABLICOS DE TUCUME'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -106,7 +106,7 @@ class SeServicioTableSeeder extends Seeder
             'proveedor' => 'Pachamama SA',
             'departamento_id' => 1,
             'localidad' => 'La Encañada',
-            'slug' => 'PROCESO ARTESANAL DEL ALGODÓN NATIVO',
+            'slug' => str_slug('PROCESO ARTESANAL DEL ALGODÓN NATIVO'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -117,7 +117,7 @@ class SeServicioTableSeeder extends Seeder
 
 
 
-        
+
 
     }
 }
