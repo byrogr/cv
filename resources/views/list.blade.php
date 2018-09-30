@@ -94,7 +94,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="cart-title mb-4">Vive las experiencias de </h1>
+                    <h2 class="cart-title mb-4">Vive las experiencias de {{ $departamento->nombre }}</h2>
                     <div class="product-topbar d-xl-flex align-items-end justify-content-between">
                         <!-- Total Products -->
                         <div class="total-products">
