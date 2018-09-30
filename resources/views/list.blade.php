@@ -183,7 +183,8 @@
         $(function () {
             console.log('xxxx');
             $('#sortBy').on('change', function () {
-                let valor = $(this).val();
+                var valor = $(this).val();
+
                 $('#frm-order').submit({
                     data: valor
                 });

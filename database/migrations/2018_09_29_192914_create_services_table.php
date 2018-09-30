@@ -53,6 +53,10 @@ class CreateServicesTable extends Migration
                 ->nullable(true)
                 ->comment('Nombre del proveedor');
 
+            $table->string('localidad')
+                ->nullable(true)
+                ->comment('Nombre de la localidad');
+
             $table->timestamps();
 
             $table->engine = 'InnoDB';
