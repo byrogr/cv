@@ -23,21 +23,20 @@
     <!-- Button Group -->
     <div class="amado-btn-group mt-30 mb-100">
         @guest
-            <a href="{{ route('login') }}" class="btn amado-btn mb-15">Acceder</a>
-            <a href="#" class="btn amado-btn active">Publica tu servicio</a>
+            <a href="{{ route('login') }}" class="btn amado-btn mb-15">Mi Cuenta</a>
         @endguest
     </div>
     <!-- Cart Menu -->
     <div class="cart-fav-search mb-100">
-        <a href="cart.html" class="cart-nav"><img src="{{ asset('img/core-img/cart.png') }}" alt=""> Cart <span>(0)</span></a>
+        <a href="#" class="cart-nav"><img src="{{ asset('img/core-img/cart.png') }}" alt=""> Cart <span>(0)</span></a>
         <a href="#" class="search-nav"><img src="{{ asset('img/core-img/search.png') }}" alt=""> Buscar</a>
     </div>
     <!-- Social Button -->
     <div class="social-info d-flex justify-content-between">
-        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
 </header>
 <!-- Header Area End -->
