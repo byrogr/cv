@@ -14,13 +14,16 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         DB::table('us_rol')->truncate();
         DB::table('us_usuario')->truncate();
+        DB::table('ub_departamento')->truncate();
         DB::table('se_servicio')->truncate();
         DB::table('in_inventario')->truncate();
+
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
 
         $this->call([
             UsRolTableSeeder::class,
             UsUsuarioTableSeeder::class,
+            UbDepartamentoTableSeeder::class,
             SeServicioTableSeeder::class,
             InInventarioTableSeeder::class
         ]);
