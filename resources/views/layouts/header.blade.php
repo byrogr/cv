@@ -16,7 +16,7 @@
             @auth
                 <li><a href="#">Mis servicios</a></li>
                 <li><a href="#">Mi perfil</a></li>
-                <li><a href="#">Salir</a></li>
+                <li><a href="{{ route('logout') }}">Salir</a></li>
             @endauth
         </ul>
     </nav>
