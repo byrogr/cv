@@ -104,11 +104,13 @@
                         <div class="product-sorting d-flex">
                             <div class="sort-by-date d-flex align-items-center mr-15">
                                 <p>Ordenar por</p>
-                                <form action="#" method="get">
-                                    <select name="select" id="sortBydate">
-                                        <option value="value">A-Z</option>
-                                        <option value="value">Precio</option>
-                                        <option value="value">Mejor valorados</option>
+                                <form id="frm-order"
+                                      action="{{ route('list', $departamento) }} "
+                                      method="get">
+                                    <select name="order" id="sortBy">
+                                        <option value="nombre">A-Z</option>
+                                        <option value="precio">Precio</option>
+                                        <option value="rank">Mas valorados</option>
                                     </select>
                                 </form>
                             </div>
@@ -174,5 +176,15 @@
             </div>
         </div>
     </div>
-    </div>
 @endsection
+
+@push('js')
+    <script>
+        $(function () {
+            console.log('xxxx');
+            $('#sortBy').on('change', function () {
+                $('#frm-order').submit();
+            })
+        })
+    </script>
+@endpush

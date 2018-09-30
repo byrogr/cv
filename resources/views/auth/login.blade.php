@@ -9,15 +9,18 @@
                 <div class="col-8 col-lg-6">
                     <div class="checkout_details_area mt-50 clearfix">
 
-                        <div class="cart-title">
-                            <h2>Login</h2>
+                        <div class="cart-title text-center">
+                            <h2>Accede a tu cuenta</h2>
                         </div>
 
                         <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                             @csrf
                             <div class="row">
                                 <div class="col-12 mb-3">
-                                    <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" name="email" value="{{ old('email') }}" required autofocus placeholder="Username">
+                                    <input type="text"
+                                           class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                           id="email" name="email" value="{{ old('email') }}"
+                                           required autofocus placeholder="Ingrese su correo...">
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -25,7 +28,10 @@
                                     @endif
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeholder="Password">
+                                    <input id="password"
+                                           type="password"
+                                           class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                           name="password" required placeholder="Ingrese su contraseña...">
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -34,25 +40,9 @@
                                 </div>
 
                                 <div class="col-12 mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                        <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mb-3">
-
-                                        <button type="submit" class="btn amado-btn">
-                                            {{ __('Login') }}
-                                        </button>
-
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
-                                        </a>
-
+                                    <button type="submit" class="btn btn-block amado-btn">
+                                        Acceder <i class="fa fa-sign-in"></i>
+                                    </button>
                                 </div>
                             </div>
                         </form>

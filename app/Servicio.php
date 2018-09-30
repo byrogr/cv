@@ -18,6 +18,13 @@ class Servicio extends Model
         return $this->belongsTo(Departamento::class);
     }
 
+    public function scopeRank($query, $mostRank)
+    {
+        if ($mostRank) {
+            return $query->where('rank', '>=', 4);
+        }
+    }
+
     public function scopeProvincia($query, $provincia)
     {
         if ($provincia) {
