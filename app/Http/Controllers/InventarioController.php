@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Departamento;
 use App\Inventario;
+use App\Servicio;
 use Illuminate\Http\Request;
 
 class InventarioController extends Controller
@@ -19,8 +20,13 @@ class InventarioController extends Controller
         $order = $request->order ?: 'nombre';
         $tours = Inventario::with(['servicios'], function($query) use ($departamento, $order) {
             $query->where('departamento_id', $departamento->id);
-            $query->orderBy($order, 'DESC');
+            //$query->orderBy($order, 'DESC');
         })->get();
         return view('list', compact('tours', 'departamento'));
+    }
+
+    public function detail(Departamento $departamento, Servicio $servicio)
+    {
+        return view('detail', compact('servicio'));
     }
 }

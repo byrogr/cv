@@ -127,9 +127,11 @@
                             <div class="single-product-wrapper">
                                 <!-- Product Image -->
                                 <div class="product-img">
-                                    <img src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
-                                    <!-- Hover Thumb -->
-                                    <img class="hover-img" src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
+                                    <a href="{{ route('detail', [$departamento, $s]) }}">
+                                        <img src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
+                                        <!-- Hover Thumb -->
+                                        <img class="hover-img" src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
+                                    </a>
                                 </div>
 
                                 <!-- Product Description -->
@@ -138,7 +140,7 @@
                                     <div class="product-meta-data">
                                         <div class="line"></div>
                                         <p class="product-price">S/. {{ $s->precio }}</p>
-                                        <a href="product-details.html">
+                                        <a href="{{ route('detail', [$departamento, $s]) }}">
                                             <h6>{{ $s->nombre }}</h6>
                                         </a>
                                     </div>
@@ -146,12 +148,14 @@
                                     <div class="ratings-cart text-right">
                                         <div class="ratings">
                                             @php $rank = $s->rank @endphp
-                                            @for ($i = 1; $i < $rank; $i++)
+                                            @for ($i = 1; $i <= $s->rank; $i++)
                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                             @endfor
                                         </div>
                                         <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Agregar">
+                                                <img src="{{ asset('img/core-img/cart.png') }}" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -181,12 +185,8 @@
 @push('js')
     <script>
         $(function () {
-            console.log('xxxx');
             $('#sortBy').on('change', function () {
-                let valor = $(this).val();
-                $('#frm-order').submit({
-                    data: valor
-                });
+                console.log('xxxx');
             })
         })
     </script>

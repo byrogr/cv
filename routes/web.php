@@ -15,6 +15,7 @@ Route::get('/', 'InventarioController@home')->name('home');
 Route::get('/logout', 'HomeController@logout')->name('logout');
 
 Route::get('/tours/{departamento}', 'InventarioController@list')->name('list');
+Route::get('/tours/{departamento}/{servicio}', 'InventarioController@detail')->name('detail');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
