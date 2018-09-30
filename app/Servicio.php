@@ -12,4 +12,11 @@ class Servicio extends Model
     {
         return $this->belongsTo(Inventario::class);
     }
+
+    public function scopeProvincia($query, $provincia)
+    {
+        if ($provincia) {
+            return $query->where('provincia', 'LIKE', "%$provincia%");
+        }
+    }
 }

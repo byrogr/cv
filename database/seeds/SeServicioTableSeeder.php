@@ -24,6 +24,7 @@ class SeServicioTableSeeder extends Seeder
             'rank' => 4,
             'video' => '93sjjr6YTzE',
             'proveedor' => 'Pachamama SA',
+            'provincia' => 'La Libertad',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -37,6 +38,7 @@ class SeServicioTableSeeder extends Seeder
             'rank' => 5,
             'video' => '93sjjr6YTzE',
             'proveedor' => 'Pachamama SA',
+            'provincia' => 'Trujillo',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
 
@@ -50,6 +52,7 @@ class SeServicioTableSeeder extends Seeder
             'rank' => 3,
             'video' => '93sjjr6YTzE',
             'proveedor' => 'Pachamama SA',
+            'provincia' => 'Trujillo',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ));
     }
