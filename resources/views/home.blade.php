@@ -9,11 +9,11 @@
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="{{ route('list', $d) }}">
-                        <img src="{{ asset("img/bg-img/$index.jpg") }}" alt="">
+                        <img src="{{ asset("img/bg-img/$index-A.jpg") }}" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
-                            <h4>{{ $d->nombre }}</h4>
+                            <h4 style="color:#FFF">{{ $d->nombre }}</h4>
                         </div>
                     </a>
                 </div>
