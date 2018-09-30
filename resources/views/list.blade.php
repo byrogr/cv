@@ -139,9 +139,9 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product1.jpg" alt="">
+                        <img src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
                         <!-- Hover Thumb -->
-                        <img class="hover-img" src="i{{ asset('img/product-img/product2.jpg') }}" alt="">
+                        <img class="hover-img" src="{{ asset('/img/product-img/product2.jpg') }}" alt="">
                     </div>
 
                     <!-- Product Description -->
@@ -176,7 +176,7 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product2.jpg" alt="">
+                        <img src="{{ asset('img/product-img/product2.jpg') }}" alt="">
                         <!-- Hover Thumb -->
                         <img class="hover-img" src="{{ asset('img/product-img/product3.jpg') }}" alt="">
                     </div>
@@ -213,7 +213,7 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product3.jpg" alt="">
+                        <img src="{{ asset('img/product-img/product4.jpg') }}" alt="">
                         <!-- Hover Thumb -->
                         <img class="hover-img" src="{{ asset('img/product-img/product4.jpg') }}" alt="">
                     </div>
@@ -250,9 +250,9 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product4.jpg" alt="">
+                        <img src="{{ asset('/img/product-img/product5.jpg') }}" alt="">
                         <!-- Hover Thumb -->
-                        <img class="hover-img" src="{{ asset('img/product-img/product5.jpg') }}" alt="">
+                        <img class="hover-img" src="{{ asset('/img/product-img/product5.jpg') }}" alt="">
                     </div>
 
                     <!-- Product Description -->
@@ -287,9 +287,9 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product5.jpg" alt="">
+                        <img src="{{ asset('/img/product-img/product5.jpg') }}" alt="">
                         <!-- Hover Thumb -->
-                        <img class="hover-img" src="img/product-img/product6.jpg" alt="">
+                        <img class="hover-img" src="{{ asset('/img/product-img/product5.jpg') }}" alt="">
                     </div>
 
                     <!-- Product Description -->
@@ -324,9 +324,9 @@
                 <div class="single-product-wrapper">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <img src="img/product-img/product6.jpg" alt="">
+                        <img src="{{ asset('/img/product-img/product6.jpg') }}" alt="">
                         <!-- Hover Thumb -->
-                        <img class="hover-img" src="{{ asset('img/product-img/product1.jpg') }}" alt="">
+                        <img class="hover-img" src="{{ asset('img/product-img/product6.jpg') }}" alt="">
                     </div>
 
                     <!-- Product Description -->
