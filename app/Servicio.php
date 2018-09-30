@@ -13,6 +13,11 @@ class Servicio extends Model
         return $this->belongsTo(Inventario::class);
     }
 
+    public function departamento()
+    {
+        return $this->belongsTo(Departamento::class);
+    }
+
     public function scopeProvincia($query, $provincia)
     {
         if ($provincia) {

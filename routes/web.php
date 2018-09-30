@@ -13,7 +13,7 @@
 
 Route::get('/', 'InventarioController@home')->name('home');
 
-Route::get('/listado', 'InventarioController@listado')->name('listado');
+Route::get('/tours/{departamento}', 'InventarioController@list')->name('list');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
